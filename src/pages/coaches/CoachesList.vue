@@ -1,7 +1,10 @@
 <template>
-  <div>
-    Coaches List Page
-  </div>
+  <section>
+    Filter Section
+  </section>
+  <section>
+    List of Components section
+  </section>
 </template>
 <script>
 export default {
