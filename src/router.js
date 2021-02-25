@@ -3,16 +3,19 @@ import { createRouter, createWebHistory } from 'vue-router'
 const router = createRouter({
   history: createWebHistory(),
   routes: [
+    // redirect to home page
     { path: '/', redirect: '/coaches' },
     { path: '/coaches', component: null },
     {
       path: '/coaches:id', component: null, children: [
-        { path: '/contact', component: null } // /coaches/id/contact
+        // /coaches/id/contact
+        { path: '/contact', component: null }
       ]
     },
     { path: '/register', component: null },
     { path: '/requests', component: null },
-    { path: '/:notFound(.*)', component: null }, // when a random url is provided
+    // when a random url is provided
+    { path: '/:notFound(.*)', component: null },
   ]
 });
 
